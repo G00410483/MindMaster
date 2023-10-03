@@ -1,0 +1,67 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="P2MM.MainPage">
+    <Grid x:Name="OverallContentGrid" HeightRequest="600" WidthRequest="600">
+        <Image Source="wood.jpg" HeightRequest="500" Opacity="0.8"/>
+        <Grid x:Name="GameGrid" HeightRequest="320" Margin="100, 50, 50, 0" WidthRequest="400" HorizontalOptions="Center" VerticalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Grid x:Name="GameGrid2" HeightRequest="300"  WidthRequest="80" Margin="0, 50, 110, 22" HorizontalOptions="End" VerticalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <VerticalStackLayout x:Name="BtnStack"
+                             HorizontalOptions="Start" Margin="50" VerticalOptions="Center" >
+            <Button x:Name="Btn1" Clicked="BtnRed_Clicked" BorderColor="White" BackgroundColor="Red" Margin="10"></Button>
+            <Button x:Name="Btn2" Clicked="BtnYellow_Clicked" BorderColor="White" BackgroundColor="Yellow" Margin="10"></Button>
+            <Button x:Name="Btn3" Clicked="BtnGreen_Clicked" BorderColor="White" BackgroundColor="Green" Margin="10"></Button>
+            <Button x:Name="Btn4" Clicked="BtnBlue_Clicked"  BorderColor="White" BackgroundColor="Blue" Margin="10"></Button>
+            <Button x:Name="Btn5" Clicked ="BtnPurple_Clicked" BorderColor="White" BackgroundColor="Purple" Margin="10"></Button>
+            <Button x:Name="Btn6" Clicked="BtnOrange_Clicked" BorderColor="White" BackgroundColor="Orange" Margin="10"></Button>
+        </VerticalStackLayout>
+        <ImageButton x:Name="ResetBtn" Source="reset.png" Clicked="ResetBtn_Clicked"
+                     HorizontalOptions="End" VerticalOptions="End" WidthRequest="100"
+                     Margin="0, 0, 20, 120"/>
+        <ImageButton x:Name="StartBtn" Source="ply.png" Clicked="StartBtn_Clicked" 
+                     VerticalOptions="Center" HorizontalOptions="Center"
+                     HeightRequest="100" WidthRequest="100"/>
+    </Grid>
+</ContentPage>
